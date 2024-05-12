@@ -20,6 +20,18 @@ class DataProvider {
         }
     }
     
+    func fetchImageData(imageURLString: String) async throws -> Data {
+        guard let url = URL(string: imageURLString) else {
+            throw URLError(.badURL)
+        }
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            return data
+        } catch {
+            throw error
+        }
+    }
 }
 
 extension DataProvider {

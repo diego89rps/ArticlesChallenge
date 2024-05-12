@@ -18,4 +18,14 @@ extension BaseViewCode {
         setupSubviews()
         setupConstraints()
     }
+    
+    func createLabel(size: CGFloat, color: UIColor) -> UILabel {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .boldSystemFont(ofSize: size)
+        label.textColor = color
+        label.textAlignment = .left
+        label.numberOfLines = 0
+        return label
+    }
 }

@@ -8,23 +8,34 @@
 import UIKit
 
 class Coordinator {
+    var navigationController: UINavigationController
     
-    var navigation: UINavigationController?
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
     
-    func start() -> UIViewController? {
+    func start() {
         let presenter = ArticlesPresenter()
+        presenter.coordinatorDelegate = self
         let controller = ArticlesViewController(presenter: presenter)
-        self.navigation = UINavigationController(rootViewController: controller)
-        return self.navigation
+        self.navigationController.pushViewController(controller, animated: true)
     }
     
-    func goToDetails(isTimedMode: Bool) {
+}
 
-//        self.navigation?.pushViewController(controller, animated: true)
+// MARK: - ArticlesPresenterCoordinatorDelegate
+
+extension Coordinator: ArticlesPresenterCoordinatorDelegate {
+    func goToDetailView(article: Article, poster: Data?) {
+        let presenter = ArticleDetailsPresenter(article: article, data: poster)
+        presenter.coordinatorDelegate = self
+        let controller = ArticleDetailsViewController(presenter: presenter)
+        self.navigationController.pushViewController(controller, animated: true)
     }
-    
+}
+
+extension Coordinator: ArticleDetailsPresenterCoordinatorDelegate {
     func goBack() {
-        self.navigation?.popViewController(animated: true)
+        self.navigationController.popViewController(animated: true)
     }
-    
 }

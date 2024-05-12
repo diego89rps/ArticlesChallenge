@@ -16,7 +16,7 @@ enum Endpoint {
         var endpoint: String
         switch self {
         case .allArticles:
-            endpoint = "everything?q=Rossignol&from=2024-05-10&sortBy=popularity"
+            endpoint = "everything?q=macOS&from=2024-05-10&sortBy=popularity"
         }
     
         let key: String = "&apiKey=b1ac0e5149904c0baa42e3ad7bc3e354"

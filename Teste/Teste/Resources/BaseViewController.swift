@@ -25,8 +25,8 @@ open class BaseViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func createNavBar(title: String, leftButton: UIBarButtonItem?, 
-                      rightButton: UIBarButtonItem?) {
+    func createNavBar(title: String, leftButton: UIBarButtonItem? = nil,
+                      rightButton: UIBarButtonItem? = nil) {
         self.title = title
         
         if let leftButton = leftButton {
