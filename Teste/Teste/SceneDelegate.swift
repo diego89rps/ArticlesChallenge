@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     var viewController: UIViewController?
     var navController : UINavigationController?
-    var presenter: MainPresenter?
+    var presenter: ArticlesPresenter?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
@@ -22,16 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let appWindow = UIWindow(frame: windowScene.coordinateSpace.bounds)
         appWindow.windowScene = windowScene
         
-        navController = UINavigationController()
-        presenter = MainPresenter()
-        guard let nav = navController, let presenter = presenter else { return }
+        let coordinator = Coordinator()
         
-        viewController = MainViewController(presenter: presenter)
-        guard let vc = viewController else { return }
-        
-        nav.pushViewController(vc, animated: true)
-        
-        appWindow.rootViewController = nav
+        appWindow.rootViewController = coordinator.start()
         appWindow.makeKeyAndVisible()
         window = appWindow
     }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainView: BaseView, BaseViewCode {
+class ArticlesView: BaseView, BaseViewCode {
     
     // MARK: Properties
     

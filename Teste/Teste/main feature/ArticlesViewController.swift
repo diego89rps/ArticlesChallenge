@@ -7,16 +7,16 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
-    lazy var customView: MainView = {
-        let mainView = MainView()
+class ArticlesViewController: BaseViewController {
+    lazy var customView: ArticlesView = {
+        let mainView = ArticlesView()
         mainView.translatesAutoresizingMaskIntoConstraints = false
         return mainView
     }()
     
-    let presenter: MainPresenter
+    let presenter: ArticlesPresenter
     
-    init(presenter: MainPresenter) {
+    init(presenter: ArticlesPresenter) {
         self.presenter = presenter
         super.init()
     }
