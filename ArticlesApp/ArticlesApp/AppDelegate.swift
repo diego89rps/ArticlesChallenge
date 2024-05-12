@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Teste
+//  ArticlesApp
 //
-//  Created by Diego Ribeiro on 01/04/24.
+//  Created by Diego Ribeiro on 12/05/24.
 //
 
 import UIKit

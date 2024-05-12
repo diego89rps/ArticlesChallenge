@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F6CE2EA2BBB7BF3003DEBDA"
-               BuildableName = "Teste.app"
-               BlueprintName = "Teste"
-               ReferencedContainer = "container:Teste.xcodeproj">
+               BlueprintIdentifier = "9FB2F5872BF16F9300F2AC5D"
+               BuildableName = "ArticlesApp.app"
+               BlueprintName = "ArticlesApp"
+               ReferencedContainer = "container:ArticlesApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,10 +35,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F6CE3002BBB7BF6003DEBDA"
-               BuildableName = "TesteTests.xctest"
-               BlueprintName = "TesteTests"
-               ReferencedContainer = "container:Teste.xcodeproj">
+               BlueprintIdentifier = "9FB2F59D2BF16F9600F2AC5D"
+               BuildableName = "ArticlesAppTests.xctest"
+               BlueprintName = "ArticlesAppTests"
+               ReferencedContainer = "container:ArticlesApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,10 +46,10 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9F6CE30A2BBB7BF6003DEBDA"
-               BuildableName = "TesteUITests.xctest"
-               BlueprintName = "TesteUITests"
-               ReferencedContainer = "container:Teste.xcodeproj">
+               BlueprintIdentifier = "9FB2F5A72BF16F9600F2AC5D"
+               BuildableName = "ArticlesAppUITests.xctest"
+               BlueprintName = "ArticlesAppUITests"
+               ReferencedContainer = "container:ArticlesApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,10 +68,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F6CE2EA2BBB7BF3003DEBDA"
-            BuildableName = "Teste.app"
-            BlueprintName = "Teste"
-            ReferencedContainer = "container:Teste.xcodeproj">
+            BlueprintIdentifier = "9FB2F5872BF16F9300F2AC5D"
+            BuildableName = "ArticlesApp.app"
+            BlueprintName = "ArticlesApp"
+            ReferencedContainer = "container:ArticlesApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -92,10 +92,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9F6CE2EA2BBB7BF3003DEBDA"
-            BuildableName = "Teste.app"
-            BlueprintName = "Teste"
-            ReferencedContainer = "container:Teste.xcodeproj">
+            BlueprintIdentifier = "9FB2F5872BF16F9300F2AC5D"
+            BuildableName = "ArticlesApp.app"
+            BlueprintName = "ArticlesApp"
+            ReferencedContainer = "container:ArticlesApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
