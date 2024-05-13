@@ -25,11 +25,13 @@ class ArticleCell: UITableViewCell, BaseViewCode {
         return imageView
     }()
     
-    lazy var authorLabel: UILabel = createLabel(size: 11, color: .lightGray)
+    lazy var authorLabel: UILabel = createLabel(color: .lightGray,
+                                                style: .subheadline)
     
-    lazy var titleLabel: UILabel = createLabel(size: 16, color: .black)
+    lazy var titleLabel: UILabel = createLabel(color: .black,
+                                               style: .headline)
     
-    lazy var descriptionLabel: UILabel = createLabel(size: 12, color: .darkGray)
+    lazy var descriptionLabel: UILabel = createLabel(color: .darkGray)
     
     // MARK: - Initialization
     

@@ -22,9 +22,9 @@ class ArticleDetailsView: BaseView, BaseViewCode {
         return imageView
     }()
     
-    lazy var publishedAtLabel: UILabel = createLabel(size: 12, color: .lightGray)
+    lazy var publishedAtLabel: UILabel = createLabel(color: .lightGray, style: .subheadline)
     
-    lazy var contentLabel: UILabel = createLabel(size: 12, color: .black)
+    lazy var contentLabel: UILabel = createLabel(color: .black)
     
     lazy var readMoreBtn: UIButton = {
         let button = UIButton(type: .system)

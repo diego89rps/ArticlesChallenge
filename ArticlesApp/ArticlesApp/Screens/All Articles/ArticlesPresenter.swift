@@ -24,7 +24,7 @@ class ArticlesPresenter {
     weak var viewDelegate: ArticlesPresenterViewDelegate?
     
     var articlesList: ArticlesModel?
-    var service: DataProvider
+    var service: DataProviderProtocol
     
     var allPosters: [(data: Data, index: Int)] = []
     
@@ -34,7 +34,7 @@ class ArticlesPresenter {
     
     // MARK: Initialization
     
-    init(service: DataProvider = DataProvider()) {
+    init(service: DataProviderProtocol = DataProvider()) {
         self.service = service
     }
     

@@ -19,13 +19,16 @@ extension BaseViewCode {
         setupConstraints()
     }
     
-    func createLabel(size: CGFloat, color: UIColor) -> UILabel {
+    func createLabel(color: UIColor,
+                     style: UIFont.TextStyle = .body) -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .boldSystemFont(ofSize: size)
+        label.font = UIFont.preferredFont(forTextStyle: style)
         label.textColor = color
         label.textAlignment = .left
         label.numberOfLines = 0
+        label.isAccessibilityElement = true
+        label.minimumScaleFactor = 11
         return label
     }
 }

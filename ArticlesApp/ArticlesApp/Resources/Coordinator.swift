@@ -34,6 +34,8 @@ extension Coordinator: ArticlesPresenterCoordinatorDelegate {
     }
 }
 
+// MARK: - ArticleDetailsPresenterCoordinatorDelegate
+
 extension Coordinator: ArticleDetailsPresenterCoordinatorDelegate {
     func goBack() {
         self.navigationController.popViewController(animated: true)

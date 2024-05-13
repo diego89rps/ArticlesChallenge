@@ -7,7 +7,12 @@
 
 import Foundation
 
-class DataProvider {
+protocol DataProviderProtocol {
+    func fetchAllArticles() async throws -> ArticlesModel
+    func fetchImageData(imageURLString: String) async throws -> Data
+}
+
+class DataProvider: DataProviderProtocol {
     func fetchAllArticles() async throws -> ArticlesModel {
         do {
             let (data, _) = try await URLSession.shared.data(from: Endpoint.allArticles.url)

@@ -104,11 +104,11 @@
 		9F37927E2BF17243008B3E17 /* All Articles */ = {
 			isa = PBXGroup;
 			children = (
-				9F3792792BF17243008B3E17 /* ArticleCell.swift */,
 				9F37927A2BF17243008B3E17 /* ArticlesModel.swift */,
 				9F37927B2BF17243008B3E17 /* ArticlesPresenter.swift */,
-				9F37927C2BF17243008B3E17 /* ArticlesView.swift */,
 				9F37927D2BF17243008B3E17 /* ArticlesViewController.swift */,
+				9F37927C2BF17243008B3E17 /* ArticlesView.swift */,
+				9F3792792BF17243008B3E17 /* ArticleCell.swift */,
 			);
 			path = "All Articles";
 			sourceTree = "<group>";
@@ -117,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				9F37927F2BF17243008B3E17 /* ArticleDetailsPresenter.swift */,
-				9F3792802BF17243008B3E17 /* ArticleDetailsView.swift */,
 				9F3792812BF17243008B3E17 /* ArticleDetailsViewController.swift */,
+				9F3792802BF17243008B3E17 /* ArticleDetailsView.swift */,
 			);
 			path = "Article Details";
 			sourceTree = "<group>";
